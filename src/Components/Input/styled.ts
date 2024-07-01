@@ -22,10 +22,10 @@ export const InputContaineStyle = styled.div<InputStyleContainerProps>`
 
   border-radius: 7px;
 
-  background: ${({ theme }) => theme.colors['base-gray-100']};
+  background: ${({ theme }) => theme.colors['base-secundary-bg']};
 
   &:focus {
-    border: 2px solid ${({ theme }) => theme.colors['base-black']};
+    border: 2px solid ${({ theme }) => theme.colors['base-text']};
     border-radius: 8px;
   }
 
@@ -53,14 +53,14 @@ export const InputStyled = styled.input`
 
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 
-  color: ${({ theme }) => theme.colors['base-black']};
+  color: ${({ theme }) => theme.colors['base-text']};
 
   &::placeholder {
-    color: ${({ theme }) => theme.colors['base-black']};
+    color: ${({ theme }) => theme.colors['base-text']};
   }
 
   &:focus {
-    border: 2px solid ${({ theme }) => theme.colors['base-black']};
+    border: 2px solid ${({ theme }) => theme.colors['base-text']};
     border-radius: 8px;
   }
 `
