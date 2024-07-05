@@ -29,7 +29,6 @@ export const NavDesktop = styled.nav`
   }
 `
 
-
 export const NavLink = styled.a<HeaderProps>`
   font-size: ${({ theme }) => theme.FontSizes['text-regular-m']};
   font-style: normal;
@@ -40,7 +39,7 @@ export const NavLink = styled.a<HeaderProps>`
 
   color: ${({ theme, stateHeader }) =>
     stateHeader === true
-      ? theme.colors['base-text']
+      ? theme.colors['base-white']
       : theme.colors['base-white']};
   cursor: pointer;
 

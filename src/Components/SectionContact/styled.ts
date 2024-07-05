@@ -1,14 +1,27 @@
 import styled from "styled-components";
 
-export const ContainerContact = styled.div`
+export const ContainerContact = styled.section`
 width: 100%;
 height: 42rem;
 padding: 4rem;
 
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: center;
 background-color: ${({theme}) => theme.colors["base-secundary-bg"]};
+`
+
+export const ContentContact = styled.div`
+width: 100%;
+height: 35rem;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+padding: 3rem;
+
+background-color: ${({theme}) => theme.colors["base-white"]};
+box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 `
 
 export const ContentInfo = styled.div`
@@ -35,9 +48,6 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: flex-start;  
-gap: 0.2rem;
-
-
 
 a {
   font-size: ${({theme}) => theme.FontSizes["text-regular-sm"]};
@@ -68,14 +78,21 @@ gap: 1rem;
 border: none;
 border-radius: 8px;
 
-background-color: ${({theme}) => theme.colors["base-white"]};
-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+background-color: ${({theme}) => theme.colors["base-secundary-bg"]};
 
 button {
   align-self: flex-start;
+  margin-top: 1rem;
 }
 `
-
+export const ContentTitle = styled.div`
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+margin-bottom: 1rem;
+`
 
 
 interface TextAreaProps {
@@ -108,7 +125,24 @@ export const TextArea = styled.textarea<TextAreaProps>`
   }
 
   &:focus {
-    border: 2px solid ${({ theme }) => theme.colors['base-text']};
+    border: 2px solid ${({ theme }) => theme.colors['base-bg']};
     border-radius: 8px;
   }
+`
+
+export const Span = styled.span`
+width: 3rem;
+height: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 99999px;
+
+padding: 0.7rem;
+background-color: ${({theme}) => theme.colors["base-bg"]};
+
+svg {
+  color: ${({theme}) => theme.colors["base-white"]};
+}
 `

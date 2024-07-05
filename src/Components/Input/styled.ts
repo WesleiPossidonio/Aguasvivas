@@ -60,7 +60,7 @@ export const InputStyled = styled.input`
   }
 
   &:focus {
-    border: 2px solid ${({ theme }) => theme.colors['base-text']};
+    border: 2px solid ${({ theme }) => theme.colors['base-bg']};
     border-radius: 8px;
   }
 `
