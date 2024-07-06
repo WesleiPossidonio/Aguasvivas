@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerContact = styled.section`
 width: 100%;
-height: 42rem;
+height: 45rem;
 padding: 4rem;
 
 display: flex;
@@ -13,7 +13,7 @@ background-color: ${({theme}) => theme.colors["base-secundary-bg"]};
 
 export const ContentContact = styled.div`
 width: 100%;
-height: 35rem;
+height: 38rem;
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -91,7 +91,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: center;
-margin-bottom: 1rem;
+margin-bottom: 0.8rem;
 `
 
 

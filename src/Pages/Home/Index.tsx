@@ -2,6 +2,7 @@ import {
   About, 
   CallAction, 
   Comments, 
+  Faq, 
   Footer, 
   HeaderLinks, 
   HeaderMenu, 
@@ -25,7 +26,8 @@ export const Home = () => {
       <SectionService />
       <SectionApp />
       <Comments/>
-      <SectionContact />
+      {/* <SectionContact /> */}
+      <Faq />
       <Footer />
     </ContainerHome>
   )

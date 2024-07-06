@@ -3,7 +3,7 @@ import ImageComments from '../../assets/ImgCallAction.jpg'
 
 export const ContainerComments = styled.section`
 width: 100%;
-height: 30rem;
+height: 40rem;
 
 display: flex;
 flex-direction: column;

@@ -1,7 +1,7 @@
 import { TextRegular, TitleText } from "../typograph"
 import { BoxAdjectives, BoxText, ContainerAdjectivesApp, ContainerSectionApp, ContentAdjectives, ContentTextApp, ImgApp } from "./styled"
 import ImageApp from '../../assets/mobileImg.svg'
-import { Heart } from "@phosphor-icons/react"
+import { DeviceMobile, DeviceTabletSpeaker, Headset, Heart } from "@phosphor-icons/react"
 import { Button } from "../Button"
 
 
@@ -26,25 +26,25 @@ export const SectionApp = () => {
 
           <ContentAdjectives>
             <BoxAdjectives>
-              <Heart size={52} weight="duotone"/>
+            <DeviceMobile size={35} color="#15A4C4" />
               <BoxText>
-                <TitleText>Rapidez</TitleText>
+                <TitleText>Rapidez &</TitleText>
                 <TextRegular size="sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nulla soluta sint qua</TextRegular>
               </BoxText>
             </BoxAdjectives>
 
             <BoxAdjectives>
-              <Heart size={52} weight="duotone"/>
+              <Headset size={35} color="#15A4C4"/>
               <BoxText>
-                <TitleText>Rapidez</TitleText>
+                <TitleText>Rapidez &</TitleText>
                 <TextRegular size="sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nulla soluta sint qua</TextRegular>
               </BoxText>
             </BoxAdjectives>
 
             <BoxAdjectives>
-              <Heart size={52} weight="duotone"/>
+              <DeviceTabletSpeaker size={35} color="#15A4C4"/>
               <BoxText>
-                <TitleText>Rapidez</TitleText>
+                <TitleText>Rapidez &</TitleText>
                 <TextRegular size="sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nulla soluta sint qua</TextRegular>
               </BoxText>
             </BoxAdjectives>

@@ -14,7 +14,7 @@ export const About = () => {
     <ContainerAbout>
       <ContentText>
         <TextRegular color="blue-100">SOBRE NÓS</TextRegular>
-        <TitleText size="xl" color="blue-500">
+        <TitleText size="l" color="blue-500">
           Lorem ipsum dolor sit amet consectetur adipisicing 
         </TitleText>
         <TextRegular size="sm">
