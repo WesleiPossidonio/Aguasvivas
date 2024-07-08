@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import { ContainerHeaderMenu, Dropdown, ImgLogo, NavDesktop, NavLink } from "./styled"
 import Logo from '../../assets/logo.png'
 
-
 export const HeaderMenu = () => {
   const [stateBackgroundHeader, setStateBackgroundHeader] =
     useState<boolean>(false)
