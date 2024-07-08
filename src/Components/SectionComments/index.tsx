@@ -13,7 +13,9 @@ import { Rating, Stack } from "@mui/material";
 export const Comments = () => {
   return (
     <ContainerComments>
-      <TitleText size="l" weight={400} color="white">O que dizem sobre a Aguaviva</TitleText>
+      <TitleText size="l" weight={600} color="white">
+        Nossos Clientes Confiam <br /> na Aguaviva
+      </TitleText>
       <Swiper
           spaceBetween={30}
           loop={true}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { ContainerHeaderMenu, NavDesktop, NavLink } from "./styled"
-import { TitleText } from "../typograph"
+import { ContainerHeaderMenu, Dropdown, ImgLogo, NavDesktop, NavLink } from "./styled"
+import Logo from '../../assets/logo.png'
 
 
 export const HeaderMenu = () => {
@@ -27,7 +27,7 @@ export const HeaderMenu = () => {
 
   return (
     <ContainerHeaderMenu stateHeader={stateBackgroundHeader}>
-      <TitleText color="white">LOGO</TitleText>
+      <ImgLogo src={Logo} />
 
        <NavDesktop>
         <NavLink
@@ -44,13 +44,23 @@ export const HeaderMenu = () => {
         >
           Sobre Nós
         </NavLink>
-        <NavLink
-          stateHeader={stateBackgroundHeader}
-          href="#principes"
-        
-        >
-          Nossos Produtos
+        <Dropdown>
+          <NavLink
+            stateHeader={stateBackgroundHeader}
+            href="#produtos"
+          
+          >
+            Nossos Produtos
+
+            <div className="dropdown-item">
+               <NavLink  stateHeader={stateBackgroundHeader}>Manipulados</NavLink>
+               <NavLink  stateHeader={stateBackgroundHeader}>Suplementos</NavLink>
+               <NavLink  stateHeader={stateBackgroundHeader}>Dermocosméticos</NavLink>
+               <NavLink  stateHeader={stateBackgroundHeader}>Homeopatia e Florais</NavLink>
+            </div>
         </NavLink>
+        </Dropdown>
+
         <NavLink
           stateHeader={stateBackgroundHeader}
           href="#companies"
@@ -60,7 +70,7 @@ export const HeaderMenu = () => {
         </NavLink>
         <NavLink
           stateHeader={stateBackgroundHeader}
-          href="#contact"
+          href="#contato"
         
         >
           Contatos

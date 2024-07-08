@@ -26,8 +26,8 @@ export const Home = () => {
       <SectionService />
       <SectionApp />
       <Comments/>
-      {/* <SectionContact /> */}
       <Faq />
+      <SectionContact />
       <Footer />
     </ContainerHome>
   )

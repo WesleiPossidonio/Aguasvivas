@@ -25,7 +25,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: center;
-gap: 1rem;
+gap: 0.8rem;
 `
 
 export const LinkSite = styled(ContentLinks)`
@@ -43,4 +43,8 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: center;
 }
+`
+
+export const ImgLogo = styled.img`
+width: 13rem;
 `

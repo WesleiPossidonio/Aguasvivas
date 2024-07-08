@@ -1,14 +1,29 @@
 import { Envelope, MapPin, WhatsappLogo } from "@phosphor-icons/react"
 import { TextRegular, TitleText } from "../typograph"
-import { ContainerFooter, ContentLinks, LinkSite, TitleLinks } from "./styled"
+import { ContainerFooter, ContentLinks, ImgLogo, LinkSite, TitleLinks } from "./styled"
+
+import Logo from '../../assets/logo.png'
 
 export const Footer = () => {
   return (
     <ContainerFooter>
       <ContentLinks>
-        <TitleText color="white">Logo</TitleText>
+        <ImgLogo src={Logo} />
+        <div>
+          <TextRegular size="sm" color="white">
+            <strong> 
+            Licença sanitária: 
+            </strong> 301.077/2022 / AFE: 0134853 / AE: 1347052
+          </TextRegular>
+  
+          <TextRegular size="sm" color="white">
+            <strong> 
+              Farmacêutico Responsável Técnico: 
+            </strong> Leandro Gomes CRF 8967/RJ 
+          </TextRegular>
+        </div>
         <TextRegular color="white">AguaViva © 2017 - Todos os direitos reservados. 
-          <br /> CNPJ: 39.692.645/0001-78
+          <br /> CNPJ: 39.692.645/0001-78 <br />
         </TextRegular>
       </ContentLinks>
 
@@ -55,16 +70,6 @@ export const Footer = () => {
            <div>
               <TextRegular weight={600}>Matrix Macaé</TextRegular>
               <TextRegular size="sm" color="white">Rua Dr Julio Olivier, 320</TextRegular>
-              <TextRegular size="sm" color="white">
-                <strong> 
-                  Farmacêutico Responsável Técnico: 
-                </strong> Leandro Gomes CRF 8967/RJ 
-              </TextRegular>
-              <TextRegular size="sm" color="white">
-                <strong> 
-                Licença sanitária: 
-                </strong> 301.077/2022 / AFE: 0134853 / AE: 1347052
-              </TextRegular>
            </div>
         </TitleLinks>
 

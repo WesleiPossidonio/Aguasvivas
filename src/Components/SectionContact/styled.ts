@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ContainerContact = styled.section`
 width: 100%;
-height: 45rem;
-padding: 4rem;
+height: 50rem;
+padding: 6rem 4rem;
 
 display: flex;
 align-items: center;
@@ -13,56 +13,66 @@ background-color: ${({theme}) => theme.colors["base-secundary-bg"]};
 
 export const ContentContact = styled.div`
 width: 100%;
-height: 38rem;
+height: 42rem;
 display: flex;
+flex-direction: column;
 align-items: center;
-justify-content: space-around;
+justify-content: center;
+gap: 2rem;
 
 padding: 3rem;
+
+border: none;
+border-radius: 12px;
 
 background-color: ${({theme}) => theme.colors["base-white"]};
 box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 `
 
 export const ContentInfo = styled.div`
+width: 100%;
 display: flex;
-flex-direction: column;
 align-items: flex-start;
-justify-content: center;
-
-p {
-  margin-bottom: 0.3rem;
-}
+justify-content: space-between;
 `
 
 export const ContainerEmailAndWhatsapp = styled.div`
 display: flex;
-align-items: center;
-justify-content: flex-start;
-gap: 1rem;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+gap: 1.5rem;
 
 margin-top: 1rem;
 
-> div {
+`
+export const ContentEmailAndWhatsapp = styled.div`
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-justify-content: flex-start;  
+justify-content: center; 
+gap: 0.3rem;
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
 
 a {
   font-size: ${({theme}) => theme.FontSizes["text-regular-sm"]};
   color: ${({theme}) => theme.colors["base-text"]};
 }
+
+div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; 
+  gap: 0.3rem;
+  margin-left: 2.7rem;
 }
-`
-
-export const Iframe = styled.iframe`
-width: 100%;
-height: 15rem;
-
-border: none;
-border-radius: 12px;
-margin-top: 2rem;
 `
 
 export const ContentForm = styled.form`
@@ -89,8 +99,9 @@ button {
 export const ContentTitle = styled.div`
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 justify-content: center;
+gap: 0.3rem;
 margin-bottom: 0.8rem;
 `
 

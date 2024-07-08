@@ -4,7 +4,7 @@ import ImageCallAction from '../../assets/ImgCallAction.jpg'
 
 export const ContainerCallAction = styled.section`
 width: 100%;
-height: 40rem;
+height: 36rem;
 
 display: flex;
 flex-direction: column;

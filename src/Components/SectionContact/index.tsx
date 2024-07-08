@@ -1,69 +1,102 @@
-import { Envelope, WhatsappLogo } from "@phosphor-icons/react"
+import { useEffect } from "react"
 import { TextRegular, TitleText } from "../typograph"
 import { 
   ContainerContact, 
   ContainerEmailAndWhatsapp, 
-  ContentContact, 
+  ContentContact,
+  ContentEmailAndWhatsapp,
   ContentForm, 
   ContentInfo, 
-  ContentTitle, 
-  Iframe, 
-  Span, 
+  ContentTitle,  
   TextArea 
 } from "./styled"
 import { Input } from "../Input"
 import { Button } from "../Button"
+import { MapPinArea, Phone, Envelope } from "@phosphor-icons/react"
+
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 export const SectionContact = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <ContainerContact>
-      <ContentContact>
-      <ContentInfo>
-         <ContentTitle>
-           <TextRegular size="sm" color="blue-100">
-             CONTATO
-           </TextRegular>
+    <ContainerContact id="contato">
+      <ContentContact data-aos="zoom-in" data-aos-duration="1000">
+        <ContentTitle>
+          <TextRegular size="sm" color="blue-100">
+            CONTATO
+          </TextRegular>
   
-           <TitleText size="l">
-             Entre em  contato conosco.
-           </TitleText>
-         </ContentTitle>
+          <TitleText size="l">
+            Entre em  contato conosco.
+          </TitleText>
+       </ContentTitle>
 
-         <ContainerEmailAndWhatsapp>
-           <Span>
-             <Envelope size={32} />
-           </Span>
-           
-           <div>
-             <TitleText size="s">Email</TitleText>
-             <a href="mailto:#">exemple@gmail.com</a>
-           </div>
-         </ContainerEmailAndWhatsapp>
-
-         <ContainerEmailAndWhatsapp>
-           <Span>
-             <WhatsappLogo size={32} /> 
-           </Span>
-           
-           <div>
-             <TitleText size="s">Telefone / Whatsapp</TitleText>
-            <a href="#" target="_blanc">(22) 22222-2222</a>
-           </div>
-         </ContainerEmailAndWhatsapp>
-
-         <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.3571681482113!2d-41.77779202543693!3d-22.377888919181682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x963063ddce4c61%3A0xc5f4ad390f2196bc!2sRua%20Dr.%20J%C3%BAlio%20Olivier%2C%20320%20-%20Centro%2C%20Maca%C3%A9%20-%20RJ%2C%2027913-162!5e0!3m2!1spt-BR!2sbr!4v1719794999495!5m2!1spt-BR!2sbr"
-          loading="lazy"  
-          />
-       </ContentInfo>
+        <ContentInfo>
+         
+          <ContainerEmailAndWhatsapp>
+            <ContentEmailAndWhatsapp>
+              
+              <TitleText size="s"> <MapPinArea size={35} color="#6CB8D8" /> Endereços</TitleText>
+              <div>
+                <TextRegular><strong>Macaé:</strong>{' '}
+                 <a href=""> Rua Dr Julio Olivier, 320, Centro, Macaé/RJ </a>
+                </TextRegular>
   
-        <ContentForm>
-          <Input type="text" placeholder="Nome" />
-          <Input type="text" placeholder="Email" />
-          <Input type="tel" placeholder="Telefone" />
-          <TextArea placeholder="Digite sua dúvida...." />
-          <Button btnLarge={false} >Enviar</Button>
-        </ContentForm>
+                <TextRegular><strong>Cabo Frio:</strong>{' '}
+                 <a href=""> Rua Raul Veiga, 60, Centro, Cabo Frio/RJ </a>
+                </TextRegular>
+              </div>
+            </ContentEmailAndWhatsapp>
+  
+            <ContentEmailAndWhatsapp>
+              <TitleText size="s"><Phone size={35} color="#6CB8D8"/>Telefones</TitleText>
+  
+              <div>
+                <TextRegular><strong>Macaé:</strong>{' '}
+                  <a href="tel:+552227626481">(22) 2762-6481</a> / {' '}
+                  <a href="tel:+55222762-925">(22) 2762-2925</a>
+                </TextRegular>
+  
+                <TextRegular><strong>Cabo Frio:</strong>{' '}
+                <a href="tel:+552227626481">(22) 2762-6481</a> / {' '}
+                <a href="tel:+55222762-925">(22) 2762-2925</a>
+                </TextRegular>
+              </div>
+            </ContentEmailAndWhatsapp>
+
+            <ContentEmailAndWhatsapp>
+              <TitleText size="s"><Envelope size={35} color="#6CB8D8"/>E-mail</TitleText>
+  
+              <div>
+                <TextRegular><strong>Macaé:</strong>{' '}
+                  <a href="mailto:orcamento@farmaciaaguaviva.com">
+                    orcamento@farmaciaaguaviva.com
+                  </a>
+                </TextRegular>
+  
+                <TextRegular><strong>Cabo Frio:</strong>{' '}
+                  <a href="mailto:aguavivacf@farmaciaaguaviva.com">
+                    aguavivacf@farmaciaaguaviva.com
+                  </a>
+                </TextRegular>
+              </div>
+            </ContentEmailAndWhatsapp>
+          </ContainerEmailAndWhatsapp>
+
+          <ContentForm>
+            <Input type="text" placeholder="Nome" />
+            <Input type="text" placeholder="Email" />
+            <Input type="tel" placeholder="Telefone" />
+            <TextArea placeholder="Digite sua dúvida...." />
+            <Button btnLarge={false} >Enviar</Button>
+          </ContentForm>
+        </ContentInfo>
       </ContentContact>
+      
     </ContainerContact>
   )
 }

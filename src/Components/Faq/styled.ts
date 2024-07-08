@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import AccordionSummary from '@mui/material/AccordionSummary';
+import { styled as muiStyled } from '@mui/material/styles'
 
 export const ContainerFaq = styled.section`
 width: 100%;
-height: 42rem;
+height: 48rem;
 
 padding: 3rem 2rem;
 
@@ -19,7 +21,6 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 gap: 0.3rem;
-
 `
 
 export const ContainerAcordion = styled.div`
@@ -32,3 +33,14 @@ gap: 2rem;
 export const ContentAcordion = styled(ContainerFaq)`
 gap: 1.5rem;
 `
+
+export const AccordionContent = muiStyled(AccordionSummary)({
+  borderRadius: '8px',
+
+  '&:focus': {
+    backgroundColor: '#15A4C4',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '8px',
+  }
+})

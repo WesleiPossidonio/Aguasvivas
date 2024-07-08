@@ -2,20 +2,22 @@ import styled from "styled-components";
 
 export const ContainerAbout = styled.section`
 width: 100%;
-height: 45rem;
+height: 42rem;
 
 padding: 0 4rem;
 
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-between;
 gap: 1rem;
+
 align-content: center;
 position: relative;
 background-color: ${({theme}) => theme.colors["base-secundary-bg"]};
 `
 
 export const ContentText = styled.div`
+width: 50%;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -27,6 +29,7 @@ export const ContainerNumbersCompany = styled.div`
 width: 85%;
 height: 8rem;
 padding: 1.2rem;
+margin-top: 0.7rem;
 
 display: flex;
 align-items: center;
@@ -51,6 +54,7 @@ text-align: center;
 `
 
 export const ContainerImage = styled.div`
+width: 50%;
 display: flex;
 align-items: center;
 justify-content: center;

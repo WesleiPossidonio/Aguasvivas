@@ -3,7 +3,7 @@ import ImageComments from '../../assets/ImgCallAction.jpg'
 
 export const ContainerComments = styled.section`
 width: 100%;
-height: 40rem;
+height: 35rem;
 
 display: flex;
 flex-direction: column;
@@ -11,7 +11,7 @@ align-items: center;
 justify-content: center;
 gap: 1.5rem;
 
-padding:2rem;
+padding: 2rem;
 
 background-image: url(${ImageComments});
 background-position: center center;

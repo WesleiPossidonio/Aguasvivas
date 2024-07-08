@@ -49,3 +49,41 @@ export const NavLink = styled.a<HeaderProps>`
     color: ${({ theme }) => theme.colors['base-blue-500']};
   }
 `
+
+export const ImgLogo = styled.img`
+width: 10rem;
+`
+
+export const Dropdown = styled.div`
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+.dropdown-item {
+  width: 15rem;
+
+  position: absolute;
+  top: 1.4rem;
+  z-index: 3;
+
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.8rem;
+
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: ${({theme}) => theme.colors["base-bg"]};
+}
+
+&:hover, &:active {
+  .dropdown-item {
+    display: flex;
+  }
+}
+`
+
