@@ -1,22 +1,21 @@
-
-import { useEffect } from "react"
+import { useEffect } from 'react'
 import ImageTest from '../../assets/imageServiceTwo.svg'
 import ImageTest2 from '../../assets/ImageService.svg'
 import ImageTestOne from '../../assets/imageOne.svg'
 import ImageTestFour from '../../assets/imageFour.svg'
-import { TextRegular, TitleText } from "../typograph"
+import { TextRegular, TitleText } from '../typograph'
 import AOS from 'aos'
-import 'aos/dist/aos.css';
+import 'aos/dist/aos.css'
 
-import { 
-  Box, 
-  BoxContent, 
-  BoxLarge, 
-  BoxServices, 
-  ButtonServices, 
-  ContainerBoxServices, 
-  ContainerSectionService 
-} from "./styled"
+import {
+  Box,
+  BoxContent,
+  BoxLarge,
+  BoxServices,
+  ButtonServices,
+  ContainerBoxServices,
+  ContainerSectionService,
+} from './styled'
 
 export const SectionService = () => {
   useEffect(() => {
@@ -24,13 +23,11 @@ export const SectionService = () => {
   }, [])
   return (
     <ContainerSectionService id="produtos">
-      <BoxServices data-aos="zoom-in" data-aos-duration="500">
-        <TitleText>
-          HOMEOPATIA E FLORAIS
-        </TitleText>
+      <BoxServices data-aos="zoom-in" data-aos-duration="500" id='florais'>
+        <TitleText>HOMEOPATIA E FLORAIS</TitleText>
 
         <TextRegular color="white">
-           Cura natural o corpo e equilíbrio físico e mental
+          Cura natural o corpo e equilíbrio físico e mental
         </TextRegular>
 
         <ButtonServices>Saiba Mais!</ButtonServices>
@@ -38,38 +35,30 @@ export const SectionService = () => {
       </BoxServices>
 
       <ContainerBoxServices>
-
         <BoxContent>
-           <Box colors="boxOne" data-aos="zoom-in" data-aos-duration="1000">
+          <Box colors="boxOne" data-aos="zoom-in" data-aos-duration="1000" id='manipulados'>
             <TitleText>MANIPULADOS</TitleText>
             <TextRegular color="white">
               Fórmulas manipuladas de acordo com suas necessidades
             </TextRegular>
             <ButtonServices>Saiba Mais!</ButtonServices>
             <img src={ImageTest} alt="" />
-           </Box>
+          </Box>
 
-
-           <Box colors="boxTwo" data-aos="zoom-in" data-aos-duration="1500">
-            <TitleText>
-              SUPLEMENTOS
-            </TitleText>
+          <Box colors="boxTwo" data-aos="zoom-in" data-aos-duration="1500" id='suprementos'>
+            <TitleText>SUPLEMENTOS</TitleText>
             <TextRegular color="white">
               Auxílio na reposição de nutrientes e aumento da performance física
             </TextRegular>
             <img src={ImageTest2} alt="" />
             <ButtonServices>Saiba Mais!</ButtonServices>
-           </Box>
+          </Box>
         </BoxContent>
 
         <BoxLarge data-aos="zoom-in" data-aos-duration="1800">
-          <TitleText>
-            DERMOCOSMÉTICOS
-          </TitleText>
+          <TitleText>DERMOCOSMÉTICOS</TitleText>
 
-          <TextRegular color="white">
-            Cuidados gerais da pele
-          </TextRegular>
+          <TextRegular color="white">Cuidados gerais da pele</TextRegular>
           <ButtonServices>Saiba Mais!</ButtonServices>
 
           <img src={ImageTestFour} alt="" />
@@ -78,5 +67,3 @@ export const SectionService = () => {
     </ContainerSectionService>
   )
 }
-
-

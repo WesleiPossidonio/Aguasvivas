@@ -1,14 +1,23 @@
-import { ThemeProvider } from "styled-components"
-import { DefaultThemes } from "./styles/theme/default"
-import { Home } from "./Pages/Home/Index"
-import { GlobalStyled } from "./styles/theme/globalStyles"
+import { ThemeProvider } from 'styled-components'
+import { DefaultThemes } from './styles/theme/default'
+import { GlobalStyled } from './styles/theme/globalStyles'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './routes/routes'
+import { HeaderLinks, HeaderMenu } from './Components'
+import { Header } from './Pages/Home/styled'
 
 function App() {
   return (
-    <ThemeProvider theme={DefaultThemes}>
-      <Home />
-      <GlobalStyled />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={DefaultThemes}>
+        <Header>
+          <HeaderLinks />
+          <HeaderMenu />
+        </Header>
+        <Router />
+        <GlobalStyled />
+      </ThemeProvider>
+    </BrowserRouter>
   )
 }
 

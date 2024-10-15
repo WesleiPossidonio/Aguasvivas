@@ -20,4 +20,9 @@ background-color: ${({theme}) => theme.colors["base-bg"]};
 z-index: 1;
 
 cursor: pointer;
+
+&:hover {
+  transform: scale(1.1) !important;
+  transition: all 0.5s;
+}
 `

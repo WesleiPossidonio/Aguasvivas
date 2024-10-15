@@ -22,7 +22,7 @@ export const Footer = () => {
             </strong> Leandro Gomes CRF 8967/RJ 
           </TextRegular>
         </div>
-        <TextRegular color="white">AguaViva © 2017 - Todos os direitos reservados. 
+        <TextRegular color="white">AguaViva © 2024 - Todos os direitos reservados. 
           <br /> CNPJ: 39.692.645/0001-78 <br />
         </TextRegular>
       </ContentLinks>
