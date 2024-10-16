@@ -63,19 +63,19 @@ export const HeaderMenu = () => {
           <NavLink stateHeader={stateBackgroundHeader} href="#produtos">
             Nossos Produtos
             <div className="dropdown-item">
-              <NavLink stateHeader={stateBackgroundHeader}>Manipulados</NavLink>
-              <NavLink stateHeader={stateBackgroundHeader}>Suplementos</NavLink>
-              <NavLink stateHeader={stateBackgroundHeader}>
+              <NavLink stateHeader={stateBackgroundHeader} onClick={() => navigate("/manipulados")}>Manipulados</NavLink>
+              <NavLink stateHeader={stateBackgroundHeader} onClick={() => navigate("/suplementos")}>Suplementos</NavLink>
+              <NavLink stateHeader={stateBackgroundHeader} onClick={() => navigate("/dermocosmeticos")}>
                 Dermocosméticos
               </NavLink>
-              <NavLink stateHeader={stateBackgroundHeader}>
+              <NavLink stateHeader={stateBackgroundHeader} onClick={() => navigate("/homepatia-e-florais")}>
                 Homeopatia e Florais
               </NavLink>
             </div>
           </NavLink>
         </Dropdown>
 
-        <NavLink stateHeader={stateBackgroundHeader} href="#companies">
+        <NavLink stateHeader={stateBackgroundHeader} onClick={() => navigate("/lojas")}>
           Lojas
         </NavLink>
         <NavLink stateHeader={stateBackgroundHeader} href="#contato">

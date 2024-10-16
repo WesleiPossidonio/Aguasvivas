@@ -16,11 +16,15 @@ import {
   ContainerBoxServices,
   ContainerSectionService,
 } from './styled'
+import { useNavigate } from 'react-router-dom'
 
 export const SectionService = () => {
+  const navigate = useNavigate()
+
   useEffect(() => {
     AOS.init()
   }, [])
+
   return (
     <ContainerSectionService id="produtos">
       <BoxServices data-aos="zoom-in" data-aos-duration="500" id="florais">
@@ -30,7 +34,9 @@ export const SectionService = () => {
           Cura natural o corpo e equilíbrio físico e mental
         </TextRegular>
 
-        <ButtonServices>Saiba Mais!</ButtonServices>
+        <ButtonServices onClick={() => navigate('/homepatia-e-florais')}>
+          Saiba Mais!
+        </ButtonServices>
         <img src={ImageTestOne} alt="" />
       </BoxServices>
 
@@ -46,7 +52,9 @@ export const SectionService = () => {
             <TextRegular color="white">
               Fórmulas manipuladas de acordo com suas necessidades
             </TextRegular>
-            <ButtonServices>Saiba Mais!</ButtonServices>
+            <ButtonServices onClick={() => navigate('/manipulados')}>
+              Saiba Mais!
+            </ButtonServices>
             <img src={ImageTest} alt="" />
           </Box>
 
@@ -61,7 +69,9 @@ export const SectionService = () => {
               Auxílio na reposição de nutrientes e aumento da performance física
             </TextRegular>
             <img src={ImageTest2} alt="" />
-            <ButtonServices>Saiba Mais!</ButtonServices>
+            <ButtonServices onClick={() => navigate('/suplementos')}>
+              Saiba Mais!
+            </ButtonServices>
           </Box>
         </BoxContent>
 
@@ -69,7 +79,9 @@ export const SectionService = () => {
           <TitleText>DERMOCOSMÉTICOS</TitleText>
 
           <TextRegular color="white">Cuidados gerais da pele</TextRegular>
-          <ButtonServices>Saiba Mais!</ButtonServices>
+          <ButtonServices onClick={() => navigate('/dermocosmeticos')}>
+            Saiba Mais!
+          </ButtonServices>
 
           <img src={ImageTestFour} alt="" />
         </BoxLarge>

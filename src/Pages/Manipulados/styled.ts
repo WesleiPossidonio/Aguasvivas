@@ -8,13 +8,23 @@ export const Container = styled.main`
 export const ContainerProducts = styled.section`
   width: 100%;
   height: 37rem;
+  min-height: max-content;
 
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 4rem;
   margin-top: 2.5rem;
   padding: 3rem;
+
+  @media (max-width: 970px) {
+  padding: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+  flex-wrap: wrap;
+  }
+
 `
 
 export const ContentText = styled.div`
@@ -31,6 +41,14 @@ export const ContentText = styled.div`
 
   button {
     margin-top: 0.2rem;
+  }
+
+  @media (max-width: 970px) {
+    width: 45%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 
 `

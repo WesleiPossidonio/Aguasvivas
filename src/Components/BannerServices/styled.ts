@@ -19,6 +19,12 @@ background-size: cover;
 h1 {
   margin-top: 2rem;
 }
+
+@media (max-width: 422px) {
+  h1 {
+    font-size: ${({theme}) => theme.FontSizes['title-regular-m']};
+  }
+  }
 `
 
 export const ContentLinks = styled.div`

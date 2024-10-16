@@ -20,6 +20,7 @@ export const ContainerAbout = styled.section`
   }
 
   @media (max-width: 768px) {
+    height: max-content;
     flex-direction: column;
     justify-content: center;
     gap: 10rem;
@@ -54,6 +55,10 @@ export const ContainerNumbersCompany = styled.div`
   z-index: 2;
   border-radius: 14px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  @media (max-width: 320px) {
+    width: 100%;
+  }
 `
 
 export const DataCompanyOne = styled.div`
@@ -112,8 +117,13 @@ export const ContainerImage = styled.div`
       margin-left: 5.5rem;
       margin-top: -7rem;
     }
-  }
 
+    @media (max-width: 320px) {
+      .imgOne {
+        bottom: -4.5rem;
+      }
+    }
+  }
 `
 
 export const Image = styled.img`

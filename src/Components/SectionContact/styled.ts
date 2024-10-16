@@ -137,8 +137,17 @@ export const ContentTitle = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+
   gap: 0.3rem;
   margin-bottom: 0.8rem;
+
+  @media (max-width: 768px) {
+
+    h1 {
+      font-size: min(2.1rem, 6vw);
+    }
+  }
 `
 
 interface TextAreaProps {
