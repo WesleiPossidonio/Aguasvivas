@@ -19,6 +19,8 @@ background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
 
+text-align: center;
+
 position: relative;
 
 &::before {
@@ -36,5 +38,20 @@ position: relative;
     max-width: 75%;
     text-align: center;
     z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    height: 28rem;
+
+    h1,
+  p {
+    max-width: 95%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: min(2.6rem, 9vw);
+  }
   }
 `

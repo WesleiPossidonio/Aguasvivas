@@ -15,7 +15,7 @@ export const DefaultThemes = {
   },
   FontSizes: {
     'text-regular-sm': '0.875rem',
-    'text-regular-s': 'min(1.0625rem, 3vw)',
+    'text-regular-s': 'min(1rem, 3vw)',
     'text-regular-m': '1.125rem',
     'text-regular-l': '1.5rem',
 

@@ -23,7 +23,7 @@ export const SectionService = () => {
   }, [])
   return (
     <ContainerSectionService id="produtos">
-      <BoxServices data-aos="zoom-in" data-aos-duration="500" id='florais'>
+      <BoxServices data-aos="zoom-in" data-aos-duration="500" id="florais">
         <TitleText>HOMEOPATIA E FLORAIS</TitleText>
 
         <TextRegular color="white">
@@ -36,7 +36,12 @@ export const SectionService = () => {
 
       <ContainerBoxServices>
         <BoxContent>
-          <Box colors="boxOne" data-aos="zoom-in" data-aos-duration="1000" id='manipulados'>
+          <Box
+            colors="boxOne"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            id="manipulados"
+          >
             <TitleText>MANIPULADOS</TitleText>
             <TextRegular color="white">
               Fórmulas manipuladas de acordo com suas necessidades
@@ -45,7 +50,12 @@ export const SectionService = () => {
             <img src={ImageTest} alt="" />
           </Box>
 
-          <Box colors="boxTwo" data-aos="zoom-in" data-aos-duration="1500" id='suprementos'>
+          <Box
+            colors="boxTwo"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            id="suprementos"
+          >
             <TitleText>SUPLEMENTOS</TitleText>
             <TextRegular color="white">
               Auxílio na reposição de nutrientes e aumento da performance física

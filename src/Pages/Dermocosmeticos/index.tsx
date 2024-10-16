@@ -1,12 +1,12 @@
-import { 
-  BannerServices, 
-  TextRegular, 
-  TitleText, 
-  ImagePages, 
+import {
+  BannerServices,
+  TextRegular,
+  TitleText,
+  ImagePages,
   Button,
-  SectionContact, 
-  Footer, 
-  CallActionServices
+  SectionContact,
+  Footer,
+  CallActionServices,
 } from '../../Components'
 import { Container, ContainerProducts, ContentText } from './styled'
 
@@ -23,18 +23,22 @@ export const Dermocosmeticos = () => {
             - Dermocosméticos
           </TitleText>
           <TitleText color="text" size="l">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Cuidados Especiais para Pele, Cabelos e Unhas
           </TitleText>
 
           <TextRegular>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            accusantium itaque totam repudiandae ducimus earum in dolore error
-            molestias, cum iste aperiam facere facilis necessitatibus at numquam
-            veniam voluptas excepturi. <br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            accusantium itaque totam repudiandae ducimus earum in dolore error
-            molestias, cum iste aperiam facere facilis necessitatibus at numquam
-            veniam voluptas excepturi.
+            Na Aguaviva, oferecemos uma <strong> ampla variedade de ativos 
+            dermatologicamente eficazes </strong> para quem busca <strong> cuidar da pele, cabelos
+            e unhas com qualidade. </strong><br />
+            <br />
+            Utilizamos apenas <strong> bases cosméticas consagradas, com laudos
+            microbiológicos e alta padronização, </strong> garantindo segurança e
+            eficácia. <br />
+            <br />
+            Nossas formulações são adaptadas às suas necessidades:
+            <strong> hipoalergênicas, livres de parabenos, sem conservantes, não
+            comedogênicas, </strong> com ou sem essências, corantes e sal, entre outras
+            opções personalizadas.
           </TextRegular>
 
           <Button btnLarge={false}>Saiba Mais!</Button>

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const ContainerSectionService = styled.section`
   width: 100%;
   height: 45rem;
+  min-height: max-content;
   padding: 2rem 4rem;
 
   display: flex;
@@ -11,11 +12,20 @@ export const ContainerSectionService = styled.section`
   gap: 1rem;
 
   margin-top: 6rem;
+
+  @media (max-width: 1024px) {
+    padding: 2rem;
+  }
+
+  @media (max-width: 679px) {
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 `
 
 export const BoxServices = styled.div`
   width: 30%;
-  height: 100%;
+  min-height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -36,11 +46,24 @@ export const BoxServices = styled.div`
     right: 2rem;
   }
 
-    &:hover {
-      transform: scale(1.1) !important;
-      transition: all 0.5s;
-      z-index: 3;
-    
+  @media (max-width: 679px) {
+    width: 100%;
+    min-height: 15rem;
+    padding: 1.5rem 1rem;
+
+    img {
+      width: min(5.5rem, 12vw);
+      position: absolute;
+      bottom: 0.6rem;
+      right: 4rem;
+    }
+  }
+
+  @media (max-width: 528px) {
+
+    img {
+      right: 2rem;
+    }
   }
 `
 
@@ -54,22 +77,9 @@ export const ContainerBoxServices = styled.div`
   justify-content: center;
   gap: 1rem;
 
-  #manipulados {
-    &:hover {
-      transform: scale(1.1);
-      transition: all 0.5s;
-      z-index: 3;
-    }
+  @media (max-width: 679px) {
+    width: 100%;
   }
-
-  #suprementos {
-    &:hover {
-      transform: scale(1.1);
-      transition: all 0.5s;
-    }
-  }
-
-
 `
 
 export const BoxContent = styled.div`
@@ -80,6 +90,11 @@ export const BoxContent = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1rem;
+
+  @media (max-width: 600px) {
+    height: max-content;
+    flex-direction: column;
+  }
 `
 
 interface BoxProps {
@@ -107,16 +122,22 @@ export const Box = styled.div<BoxProps>`
   position: relative;
 
   img {
-    width: ${({ colors }) => (colors === 'boxOne' ? '12.5rem' : '8.5rem')};
+    width: ${({ colors }) =>
+      colors === 'boxOne' ? 'min(12.5rem, 23vw)' : 'min(8.5rem, 17vw)'};
     position: absolute;
     bottom: 0.6rem;
     right: 1rem;
+  }
+
+  @media (max-width: 679px) {
+    height: 14rem;
+    padding: 1.5rem 1rem;
   }
 `
 
 export const BoxLarge = styled.div`
   width: 100%;
-  height: 50%;
+  min-height: 50%;
 
   display: flex;
   flex-direction: column;
@@ -125,7 +146,7 @@ export const BoxLarge = styled.div`
   gap: 0.5rem;
 
   padding: 2rem;
-  border: mone;
+  border: none;
   border-radius: 12px;
   background-color: ${({ theme }) => theme.colors['base-blue-100']};
 
@@ -138,11 +159,24 @@ export const BoxLarge = styled.div`
     right: 2rem;
   }
 
-  &:hover {
-      transform: scale(1.1) !important;
-      transition: all 0.5s;
-      z-index: 3;
+  @media (max-width: 679px) {
+    width: 100%;
+    min-height: 15rem;
+    padding: 1.5rem 1rem;
+
+    img {
+      width: min(12.5rem, 30vw);
+      bottom: -0.4rem;
+      right: 4rem;
     }
+  }
+
+  @media (max-width: 444px) {
+    img {
+      bottom: -0.2rem;
+      right: 1rem;
+    }
+  }
 `
 
 export const ButtonServices = styled.button`

@@ -11,6 +11,10 @@ justify-content: space-between;
 align-items: center;
 
 background-color: ${({theme}) => theme.colors["base-bg"]};
+
+@media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 `
 
 export const ContentLinkContact = styled.div`

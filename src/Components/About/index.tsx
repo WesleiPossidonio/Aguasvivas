@@ -37,21 +37,21 @@ export const About = () => {
 
         <ContainerNumbersCompany>
           <DataCompanyOne>
-            <TitleText size="l" color="blue-100">+{<CountUp end={1000} duration={3} decimal='4' />}</TitleText>
+            <TitleText color="blue-100">+{<CountUp end={1000} duration={3} decimal='4' />}</TitleText>
             <TextRegular size="sm">Clientes Satisfeitos</TextRegular>
           </DataCompanyOne>
 
           <LineVertical size={52} weight="thin" />
 
           <DataCompanyOne>
-            <TitleText size="l" color="blue-100">+{<CountUp end={500} duration={3} />}</TitleText>
+            <TitleText color="blue-100">+{<CountUp end={500} duration={3} />}</TitleText>
             <TextRegular size="sm">Receitas Cliadas</TextRegular>
           </DataCompanyOne>
 
           <LineVertical size={52} weight="thin" />
           
           <DataCompanyOne>
-            <TitleText size="l" color="blue-100">+{<CountUp end={1500} duration={3} decimal='4' />}</TitleText>
+            <TitleText color="blue-100">+{<CountUp end={1500} duration={3} decimal='4' />}</TitleText>
             <TextRegular size="sm">Atendimentos Realizados</TextRegular>
           </DataCompanyOne>
         </ContainerNumbersCompany>

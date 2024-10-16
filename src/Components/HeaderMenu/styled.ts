@@ -15,6 +15,23 @@ align-items: center;
 
 background: ${({ theme, stateHeader }) =>
     stateHeader === true ? theme.colors['base-bg'] : 'transparent'};
+
+> svg {
+    display: none;
+    z-index: 9999;
+  }
+
+  @media (max-width: 970px) {
+    > svg {
+      display: block;
+      color: ${({ theme }) => theme.colors["base-bg"]};
+    }
+  }
+
+
+@media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 `
 
 export const NavDesktop = styled.nav`
@@ -86,4 +103,34 @@ justify-content: center;
   }
 }
 `
+interface NavMobileProps {
+  isOpen: boolean;
+}
 
+export const NavMobile = styled.nav<NavMobileProps>`
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 99;
+
+  background-color: ${({ theme }) => theme.colors["base-white"]};
+`;
+
+export const NavLinkMobile = styled(NavLink)`
+  font-size: ${({ theme }) => theme.FontSizes["title-regular-m"]};
+  color: ${({ theme }) => theme.colors["base-bg"]};
+  font-weight: 500;
+`;

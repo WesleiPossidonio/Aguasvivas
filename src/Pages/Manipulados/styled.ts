@@ -7,7 +7,7 @@ export const Container = styled.main`
 
 export const ContainerProducts = styled.section`
   width: 100%;
-  height: 35rem;
+  height: 37rem;
 
   display: flex;
   align-items: flex-start;
@@ -25,8 +25,12 @@ export const ContentText = styled.div`
   justify-content: center;
   gap: 0.2rem;
 
-  p, button {
+  p {
     margin-top: 1rem;
+  }
+
+  button {
+    margin-top: 0.2rem;
   }
 
 `

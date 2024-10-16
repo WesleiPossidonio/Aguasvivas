@@ -1,110 +1,145 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerContact = styled.section`
-width: 100%;
-height: 50rem;
-padding: 6rem 4rem;
+  width: 100%;
+  height: 55rem;
+  min-height: max-content;
+  padding: 6rem 4rem;
 
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: ${({theme}) => theme.colors["base-secundary-bg"]};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors['base-secundary-bg']};
+
+  @media (max-width: 768px) {
+    padding: 4rem 2rem;
+  }
 `
 
 export const ContentContact = styled.div`
-width: 100%;
-height: 42rem;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 2rem;
+  width: 100%;
+  height: 42rem;
+  min-height: max-content;
 
-padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 
-border: none;
-border-radius: 12px;
+  padding: 3rem;
 
-background-color: ${({theme}) => theme.colors["base-white"]};
-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border: none;
+  border-radius: 12px;
+
+  background-color: ${({ theme }) => theme.colors['base-white']};
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+  @media (max-width: 768px) {
+    padding: 4rem 2rem;
+  }
 `
 
 export const ContentInfo = styled.div`
-width: 100%;
-display: flex;
-align-items: flex-start;
-justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    gap: 3rem;
+  }
 `
 
 export const ContainerEmailAndWhatsapp = styled.div`
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center;
-gap: 1.5rem;
-
-margin-top: 1rem;
-
-`
-export const ContentEmailAndWhatsapp = styled.div`
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center; 
-gap: 0.3rem;
-
-h1 {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-a {
-  font-size: ${({theme}) => theme.FontSizes["text-regular-sm"]};
-  color: ${({theme}) => theme.colors["base-text"]};
-}
-
-div {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center; 
+  justify-content: center;
+  gap: 1.5rem;
+
+  margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`
+
+export const ContentEmailAndWhatsapp = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   gap: 0.3rem;
-  margin-left: 2.7rem;
-}
+
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  a {
+    font-size: ${({ theme }) => theme.FontSizes['text-regular-sm']};
+    color: ${({ theme }) => theme.colors['base-text']};
+  }
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-left: 2.7rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    div {
+      margin-left: 0;
+    }
+  }
 `
 
 export const ContentForm = styled.form`
-width: 50%;
-padding: 2rem 1.5rem;
+  width: 50%;
+  padding: 2rem 1.5rem;
 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 
-border: none;
-border-radius: 8px;
+  border: none;
+  border-radius: 8px;
 
-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-background-color: ${({theme}) => theme.colors["base-secundary-bg"]};
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  background-color: ${({ theme }) => theme.colors['base-secundary-bg']};
 
-button {
-  align-self: flex-start;
-  margin-top: 1rem;
-}
+  button {
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
+
 export const ContentTitle = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 0.3rem;
-margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 0.8rem;
 `
-
 
 interface TextAreaProps {
   error?: string
@@ -142,18 +177,18 @@ export const TextArea = styled.textarea<TextAreaProps>`
 `
 
 export const Span = styled.span`
-width: 3rem;
-height: 3rem;
-display: flex;
-align-items: center;
-justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-border-radius: 99999px;
+  border-radius: 99999px;
 
-padding: 0.7rem;
-background-color: ${({theme}) => theme.colors["base-bg"]};
+  padding: 0.7rem;
+  background-color: ${({ theme }) => theme.colors['base-bg']};
 
-svg {
-  color: ${({theme}) => theme.colors["base-white"]};
-}
+  svg {
+    color: ${({ theme }) => theme.colors['base-white']};
+  }
 `

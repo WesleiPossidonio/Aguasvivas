@@ -70,6 +70,13 @@ position: relative;
     margin-top: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  h1,
+  p {
+    max-width: 95%;
+  }
+  }
 `
 
 export const CommentsHeader = styled.div`

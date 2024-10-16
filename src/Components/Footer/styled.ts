@@ -3,13 +3,21 @@ import styled from "styled-components";
 export const ContainerFooter = styled.footer`
 width: 100%;
 height: 20rem;
+min-height: max-content;
 padding: 2.5rem 2rem;
 
 display: flex;
 align-items: flex-start;
 justify-content: space-around;
 
+
 background-color: ${({theme}) => theme.colors["base-bg"]};
+
+
+@media (max-width: 600px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `
 
 export const ContainerContact = styled.div`

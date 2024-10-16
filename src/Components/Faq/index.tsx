@@ -17,7 +17,7 @@ export const Faq = () => {
 
       <ContainerAcordion>
         <ContentAcordion>
-           <Accordion defaultExpanded>
+           <Accordion>
               <AccordionContent
                 expandIcon={<CaretDown size={25} />}
                 aria-controls="panel1-content"
@@ -109,7 +109,7 @@ export const Faq = () => {
         </ContentAcordion>
 
         <ContentAcordion>
-           <Accordion defaultExpanded>
+           <Accordion>
               <AccordionContent
                 expandIcon={<CaretDown size={25} />}
                 aria-controls="panel1-content"
