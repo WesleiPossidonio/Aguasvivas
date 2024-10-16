@@ -6,7 +6,7 @@ import Sitemap from 'vite-plugin-sitemap'
 export default defineConfig({
   plugins: [
     react(),
-    Sitemap({ hostname: '#'}),
+    Sitemap({ hostname: 'https://aguasvivas.vercel.app/'}),
   ],
   
 })
