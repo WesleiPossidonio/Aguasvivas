@@ -42,7 +42,7 @@ export const SectionApp = () => {
           <ImgApp src={ImageApp} />
 
           <ContentAdjectives>
-            <BoxAdjectives data-aos="fade-left" data-aos-duration="1000">
+            <BoxAdjectives data-aos="zoom-in" data-aos-duration="1000">
               <DeviceMobile size={35} color="#15A4C4" />
               <BoxText>
                 <TitleText> Facilidade & Comodidade</TitleText>
@@ -53,7 +53,7 @@ export const SectionApp = () => {
               </BoxText>
             </BoxAdjectives>
 
-            <BoxAdjectives data-aos="fade-left" data-aos-duration="1000">
+            <BoxAdjectives data-aos="zoom-in" data-aos-duration="1000">
               <Headset size={35} color="#15A4C4" />
               <BoxText>
                 <TitleText>Praticidade & Eficiência</TitleText>
@@ -64,7 +64,7 @@ export const SectionApp = () => {
               </BoxText>
             </BoxAdjectives>
 
-            <BoxAdjectives data-aos="fade-left" data-aos-duration="1000">
+            <BoxAdjectives data-aos="zoom-in" data-aos-duration="1000">
               <DeviceTabletSpeaker size={35} color="#15A4C4" />
               <BoxText>
                 <TitleText>Simplicidade & Conveniência</TitleText>
