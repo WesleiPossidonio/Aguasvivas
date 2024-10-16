@@ -43,7 +43,7 @@ export const HeaderMenu = () => {
 
   return (
     <ContainerHeaderMenu stateHeader={stateBackgroundHeader}>
-      <ImgLogo src={Logo} />
+      <ImgLogo src={Logo} onClick={() => navigate("/")}/>
 
       {isOpen ? (
         <X size={35} weight="bold" color='#15A4C4' onClick={handleStateMenuMobile} />
