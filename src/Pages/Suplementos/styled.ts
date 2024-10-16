@@ -8,6 +8,7 @@ export const Container = styled.main`
 export const ContainerProducts = styled.section`
   width: 100%;
   height: 35rem;
+  min-height: max-content;
 
   display: flex;
   align-items: flex-start;
