@@ -26,6 +26,7 @@ export const ContainerAbout = styled.section`
     gap: 10rem;
 
     margin-bottom: 10rem;
+    margin-top: 2rem;
   }
 `
 
