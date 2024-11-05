@@ -17,7 +17,7 @@ import {
 } from '@phosphor-icons/react'
 import { Button } from '../Button'
 import AOS from 'aos'
-import 'aos/dist/aos.css';
+import 'aos/dist/aos.css'
 
 export const SectionApp = () => {
   useEffect(() => {

@@ -1,40 +1,38 @@
-import styled from "styled-components";
-
+import styled from 'styled-components'
 
 export const ContainerHeaderLinks = styled.div`
-width: 100%;
-height: 2.5rem;
-padding: 0 3rem;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 3rem;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-background-color: ${({theme}) => theme.colors["base-bg"]};
+  background-color: ${({ theme }) => theme.colors['base-bg']};
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 0 1rem;
   }
 `
 
 export const ContentLinkContact = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 
-color: ${({theme}) => theme.colors["base-white"]};
+  color: ${({ theme }) => theme.colors['base-white']};
 `
 
 export const Link = styled.a`
-font-size: ${({theme}) => theme.FontSizes["text-regular-sm"]};
-color: ${({theme}) => theme.colors["base-white"]};
+  font-size: ${({ theme }) => theme.FontSizes['text-regular-sm']};
+  color: ${({ theme }) => theme.colors['base-white']};
 `
 
 export const ContainerLinks = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 0.2rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
 `

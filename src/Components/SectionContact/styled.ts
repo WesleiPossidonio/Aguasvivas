@@ -118,7 +118,8 @@ export const ContentForm = styled.form`
   border: none;
   border-radius: 8px;
 
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   background-color: ${({ theme }) => theme.colors['base-secundary-bg']};
 
@@ -143,7 +144,6 @@ export const ContentTitle = styled.div`
   margin-bottom: 0.8rem;
 
   @media (max-width: 768px) {
-
     h1 {
       font-size: min(2.1rem, 6vw);
     }

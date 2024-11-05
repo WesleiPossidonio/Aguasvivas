@@ -1,29 +1,29 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 import ImageCallAction from '../../assets/ImgCallAction.jpg'
 
 export const ContainerCallAction = styled.section`
-width: 100%;
-height: 36rem;
+  width: 100%;
+  height: 36rem;
 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 
-padding: 2rem;
+  padding: 2rem;
 
-background-image: url(${ImageCallAction});
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
+  background-image: url(${ImageCallAction});
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-text-align: center;
+  text-align: center;
 
-position: relative;
+  position: relative;
 
-&::before {
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -44,14 +44,14 @@ position: relative;
     height: 28rem;
 
     h1,
-  p {
-    max-width: 95%;
-    text-align: center;
-    z-index: 1;
-  }
+    p {
+      max-width: 95%;
+      text-align: center;
+      z-index: 1;
+    }
 
-  h1 {
-    font-size: min(2.6rem, 9vw);
-  }
+    h1 {
+      font-size: min(2.6rem, 9vw);
+    }
   }
 `

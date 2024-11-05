@@ -40,7 +40,7 @@ export const SectionContact = () => {
                 {' '}
                 <MapPinArea size={35} color="#6CB8D8" /> Endereços
               </TitleText>
-              
+
               <div>
                 <TextRegular>
                   <strong>Macaé:</strong>{' '}

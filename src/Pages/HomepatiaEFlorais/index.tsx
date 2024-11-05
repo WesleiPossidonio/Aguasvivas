@@ -27,13 +27,23 @@ export const HomepratiaEFlorais = () => {
           </TitleText>
 
           <TextRegular>
-            Na Aguaviva, <strong> contamos com um laboratório exclusivo para homeopatia e
-            florais,</strong> operado por profissionais treinados e supervisionados por
+            Na Aguaviva,{' '}
+            <strong>
+              {' '}
+              contamos com um laboratório exclusivo para homeopatia e florais,
+            </strong>{' '}
+            operado por profissionais treinados e supervisionados por
             farmacêuticos especializados. <br />
-            <br />A homeopatia <strong> promove a cura natural do corpo, ajudando o
-            paciente a restaurar a saúde de forma suave. </strong> Já os florais <strong> trazem
-            equilíbrio ao corpo e à mente, </strong> sendo ideais para quem busca
-            bem-estar de forma natural e para toda a família.
+            <br />A homeopatia{' '}
+            <strong>
+              {' '}
+              promove a cura natural do corpo, ajudando o paciente a restaurar a
+              saúde de forma suave.{' '}
+            </strong>{' '}
+            Já os florais{' '}
+            <strong> trazem equilíbrio ao corpo e à mente, </strong> sendo
+            ideais para quem busca bem-estar de forma natural e para toda a
+            família.
           </TextRegular>
 
           <Button btnLarge={false}>Saiba Mais!</Button>

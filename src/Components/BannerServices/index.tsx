@@ -1,5 +1,6 @@
 import { ContainerBannerService, ContentLinks } from './styled'
 import { TextRegular, TitleText } from '../typograph'
+import { useNavigate } from 'react-router-dom'
 
 interface BannerServicesProps {
   nameServices: string
@@ -7,6 +8,8 @@ interface BannerServicesProps {
 }
 
 export const BannerServices = ({ nameServices, loja }: BannerServicesProps) => {
+  const navigate = useNavigate()
+
   return (
     <ContainerBannerService>
       <TitleText color="white" size="xl">
@@ -15,7 +18,7 @@ export const BannerServices = ({ nameServices, loja }: BannerServicesProps) => {
 
       {loja ? (
         <ContentLinks>
-          <TextRegular color="white" weight={500}>
+          <TextRegular color="white" weight={600} onClick={() => navigate('/')}>
             Home
           </TextRegular>{' '}
           |
@@ -25,7 +28,7 @@ export const BannerServices = ({ nameServices, loja }: BannerServicesProps) => {
         </ContentLinks>
       ) : (
         <ContentLinks>
-          <TextRegular color="white" weight={500}>
+          <TextRegular color="white" weight={500} onClick={() => navigate('/')}>
             Home
           </TextRegular>{' '}
           |

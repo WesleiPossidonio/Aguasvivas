@@ -27,17 +27,31 @@ export const Manipulados = () => {
           </TitleText>
 
           <TextRegular size="s" weight={500}>
-            Na farmácia Aguaviva, <strong> os medicamentos manipulados são desenvolvidos
-            de forma personalizada, </strong> seguindo exatamente a prescrição médica e as
-            necessidades únicas de cada paciente. <br /> <br />
-            Com a manipulação, você tem acesso a doses exclusivas e <strong> combinações
-            de ativos que não se encontram na indústria farmacêutica, </strong> trazendo
-            mais benefícios e, em alguns casos, economia. <br />
+            Na farmácia Aguaviva,{' '}
+            <strong>
+              {' '}
+              os medicamentos manipulados são desenvolvidos de forma
+              personalizada,{' '}
+            </strong>{' '}
+            seguindo exatamente a prescrição médica e as necessidades únicas de
+            cada paciente. <br /> <br />
+            Com a manipulação, você tem acesso a doses exclusivas e{' '}
+            <strong>
+              {' '}
+              combinações de ativos que não se encontram na indústria
+              farmacêutica,{' '}
+            </strong>{' '}
+            trazendo mais benefícios e, em alguns casos, economia. <br />
             <br />
-            Oferecemos <strong> diversas formas de medicamentos </strong> que tornam o tratamento
-            mais agradável e fácil de seguir, <strong> como gomas, chás, chocolates,
-            filmes orodispersíveis, entre outros.</strong>
-            <br /><br />
+            Oferecemos <strong> diversas formas de medicamentos </strong> que
+            tornam o tratamento mais agradável e fácil de seguir,{' '}
+            <strong>
+              {' '}
+              como gomas, chás, chocolates, filmes orodispersíveis, entre
+              outros.
+            </strong>
+            <br />
+            <br />
           </TextRegular>
 
           <Button btnLarge={false}>Saiba Mais!</Button>

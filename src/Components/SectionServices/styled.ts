@@ -60,7 +60,6 @@ export const BoxServices = styled.div`
   }
 
   @media (max-width: 528px) {
-
     img {
       right: 2rem;
     }

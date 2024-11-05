@@ -37,7 +37,9 @@ export const Image = styled.img`
   border-radius: 12px;
   margin: 2rem 0 0 -4rem;
 
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
   @media (max-width: 768px) {
     width: min(32rem, 75vw);

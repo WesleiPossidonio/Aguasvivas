@@ -18,11 +18,11 @@ export const ContainerProducts = styled.section`
   padding: 3rem;
 
   @media (max-width: 970px) {
-  padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   @media (max-width: 768px) {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 `
 
@@ -34,7 +34,8 @@ export const ContentText = styled.div`
   justify-content: center;
   gap: 0.2rem;
 
-  p, button {
+  p,
+  button {
     margin-top: 1rem;
   }
 

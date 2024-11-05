@@ -24,7 +24,9 @@ export const ContainerInfoContacts = styled.section`
     margin-top: 4rem;
     border: none;
     border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow:
+      rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
 
   @media (max-width: 900px) {
@@ -32,7 +34,7 @@ export const ContainerInfoContacts = styled.section`
     gap: 2rem;
     padding: 1.5rem;
 
-    iframe { 
+    iframe {
       width: 100%;
     }
   }
@@ -46,59 +48,58 @@ export const ContentInfoContacts = styled.div`
   justify-content: center;
   gap: 1.5rem;
 
-  p, button {
+  p,
+  button {
     margin-top: 1rem;
   }
 
-  
   @media (max-width: 900px) {
     width: 100%;
   }
-
 `
 export const ContainerInfo = styled.div`
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 `
 export const ContainerInfoDoctor = styled(ContainerInfo)`
-margin-left: 2.5rem;
+  margin-left: 2.5rem;
 
-@media (max-width: 768px) {
-  margin-left: 0;
+  @media (max-width: 768px) {
+    margin-left: 0;
   }
 `
 
 export const ContainerIcon = styled.span`
-width: 15%;
-height: 5rem;
+  width: 15%;
+  height: 5rem;
 
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-padding: 1rem;
+  padding: 1rem;
 
-border-radius: 12px;
+  border-radius: 12px;
 
-background-color: ${({theme}) => theme.colors['base-bg']};
+  background-color: ${({ theme }) => theme.colors['base-bg']};
 
-@media (max-width: 430px) {
-  height: 4rem;
+  @media (max-width: 430px) {
+    height: 4rem;
   }
 `
 
 export const ContenTextInfo = styled.div`
-width: 85%;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center;
-gap: 0.3rem;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.3rem;
 
-p {
-  margin-top: 0;
-}
+  p {
+    margin-top: 0;
+  }
 `

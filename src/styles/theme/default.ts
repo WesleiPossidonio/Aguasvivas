@@ -1,7 +1,7 @@
 export const DefaultThemes = {
   colors: {
     'base-bg': '#15A4C4',
-    'base-secundary-bg': '#FAFAFA' ,
+    'base-secundary-bg': '#FAFAFA',
     'base-white': '#fff',
     'base-text': '#30383B',
     'base-text-hover': '#63A4DD',
@@ -11,7 +11,7 @@ export const DefaultThemes = {
     'base-blue-200': '#78C0FD',
     'base-blue-300': '#547FA2',
     'base-blue-500': '#333F48',
-    'base-blue-600': '#00353F'
+    'base-blue-600': '#00353F',
   },
   FontSizes: {
     'text-regular-sm': '0.875rem',

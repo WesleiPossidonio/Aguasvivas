@@ -1,4 +1,4 @@
-import { ContainerImages, Image } from "./styled"
+import { ContainerImages, Image } from './styled'
 
 interface ImagePagesProps {
   linkImg: string
@@ -11,4 +11,3 @@ export const ImagePages = ({ linkImg }: ImagePagesProps) => {
     </ContainerImages>
   )
 }
-

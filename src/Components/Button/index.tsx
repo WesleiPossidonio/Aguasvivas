@@ -1,5 +1,5 @@
-import { ReactNode } from "react"
-import { ContainerButton } from "./styled"
+import { ReactNode } from 'react'
+import { ContainerButton } from './styled'
 
 interface ButtonProps {
   children: ReactNode
@@ -7,11 +7,5 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, btnLarge }: ButtonProps) => {
-  return (
-    <ContainerButton btnLarge={btnLarge}>
-      {children}
-    </ContainerButton>
-  )
+  return <ContainerButton btnLarge={btnLarge}>{children}</ContainerButton>
 }
-
-

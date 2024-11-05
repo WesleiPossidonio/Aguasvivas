@@ -1,22 +1,22 @@
-import styled from "styled-components";
-
+import styled from 'styled-components'
+import { Link } from 'react-scroll'
 interface HeaderProps {
   stateHeader?: boolean
 }
 
 export const ContainerHeaderMenu = styled.header<HeaderProps>`
-width: 100%;
-height: 4rem;
-padding: 2rem;
+  width: 100%;
+  height: 4rem;
+  padding: 2rem;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-background: ${({ theme, stateHeader }) =>
+  background: ${({ theme, stateHeader }) =>
     stateHeader === true ? theme.colors['base-bg'] : 'transparent'};
 
-> svg {
+  > svg {
     display: none;
     z-index: 9999;
   }
@@ -24,12 +24,11 @@ background: ${({ theme, stateHeader }) =>
   @media (max-width: 970px) {
     > svg {
       display: block;
-      color: ${({ theme }) => theme.colors["base-bg"]};
+      color: ${({ theme }) => theme.colors['base-bg']};
     }
   }
 
-
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 0 1rem;
   }
 `
@@ -68,43 +67,44 @@ export const NavLink = styled.a<HeaderProps>`
 `
 
 export const ImgLogo = styled.img`
-width: 10rem;
+  width: 10rem;
 `
 
 export const Dropdown = styled.div`
-position: relative;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-
-.dropdown-item {
-  width: 15rem;
-
-  position: absolute;
-  top: 1.4rem;
-  z-index: 3;
-
-  display: none;
+  position: relative;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  gap: 0.8rem;
 
-  padding: 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: ${({theme}) => theme.colors["base-bg"]};
-}
-
-&:hover, &:active {
   .dropdown-item {
-    display: flex;
+    width: 15rem;
+
+    position: absolute;
+    top: 1.4rem;
+    z-index: 3;
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.8rem;
+
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: ${({ theme }) => theme.colors['base-bg']};
   }
-}
+
+  &:hover,
+  &:active {
+    .dropdown-item {
+      display: flex;
+    }
+  }
 `
 interface NavMobileProps {
-  isOpen: boolean;
+  isOpen: boolean
 }
 
 export const NavMobile = styled.nav<NavMobileProps>`
@@ -112,7 +112,7 @@ export const NavMobile = styled.nav<NavMobileProps>`
   height: 100vh;
   overflow: hidden;
 
-  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -126,11 +126,11 @@ export const NavMobile = styled.nav<NavMobileProps>`
 
   z-index: 99;
 
-  background-color: ${({ theme }) => theme.colors["base-white"]};
-`;
+  background-color: ${({ theme }) => theme.colors['base-white']};
+`
 
 export const NavLinkMobile = styled(NavLink)`
-  font-size: ${({ theme }) => theme.FontSizes["title-regular-m"]};
-  color: ${({ theme }) => theme.colors["base-bg"]};
+  font-size: ${({ theme }) => theme.FontSizes['title-regular-m']};
+  color: ${({ theme }) => theme.colors['base-bg']};
   font-weight: 500;
-`;
+`

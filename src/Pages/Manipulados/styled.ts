@@ -18,13 +18,12 @@ export const ContainerProducts = styled.section`
   padding: 3rem;
 
   @media (max-width: 970px) {
-  padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   @media (max-width: 768px) {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
-
 `
 
 export const ContentText = styled.div`
@@ -50,5 +49,4 @@ export const ContentText = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
-
 `
